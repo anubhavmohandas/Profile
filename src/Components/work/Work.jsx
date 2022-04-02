@@ -13,10 +13,6 @@ const Work = () => {
             <div className="p1-list">
                 <Works/>
                 <Works/>
-                <Works/>
-                <Works/>
-                <Works/>
-                <Works/>
             </div>
         </div>
     )
