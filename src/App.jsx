@@ -1,15 +1,16 @@
 import About from "./Components/About/about";
 import Intro from "./Components/Intro/intro";
-import Project from "./Components/Project/project";
-import Testimonial from "./Components/Testimonials/Testimonial"
+import Work from "./Components/work/Work";
+import Works from "./Components/Works/Works";
+
 
 const App = () => {
   return (
       <div>
         <Intro/>
         <About/>
-        <Project/>
-        <Testimonial/>
+        <Work/>
+        <Works/>
       </div>
     )
 };
