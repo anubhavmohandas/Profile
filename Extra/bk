@@ -129,3 +129,28 @@ button{
     font-weight: 500;
     cursor: pointer;
 }
+
+
+
+
+import About from "./Components/About/about";
+import Intro from "./Components/Intro/intro";
+import Work from "./Components/work/Work";
+import Contact from "./Components/Contact/Contact";
+import Toggle from "./Components/toggle/Toggle";
+import { useState } from "react";
+
+const App = () => {
+  const [dark, setDark] = useState(false)
+  return (
+      <div>
+        <Toggle setDark={setDark}/>
+        <Intro dark={dark}/>
+        <About dark={dark}/>
+        <Work dark={dark}/>
+        <Contact dark={dark}/>
+      </div>
+    )
+};
+
+export default App;
