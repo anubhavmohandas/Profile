@@ -25,3 +25,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 700px){
+    .p1{
+        padding: 10px;
+    }
+
+    .p1-text{
+        width: 100%;
+    }
+
+    .p1-desc{
+        display: none;
+    }
+}
