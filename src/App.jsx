@@ -1,8 +1,7 @@
 import About from "./Components/About/about";
 import Intro from "./Components/Intro/intro";
 import Work from "./Components/work/Work";
-import Works from "./Components/Works/Works";
-
+import Contact from "./Components/Contact/Contact";
 
 const App = () => {
   return (
@@ -10,7 +9,7 @@ const App = () => {
         <Intro/>
         <About/>
         <Work/>
-        <Works/>
+        <Contact/>
       </div>
     )
 };

@@ -1,0 +1,32 @@
+HTML - Works
+const works ({img,link}) => { 
+    return (
+ka href={link} target="_blank" rel="noreferrer">
+  <img src={img} alt="" className="p-img" />
+
+CSS
+  •p-img {
+    width: 100%;
+    transition: all 10s ease;
+   }
+   .p:hover .p-img {
+    transform: translateY(-100%);
+   }
+
+   .p-browser {
+    height: 20px;
+    background-color: Irgb(243,
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+
+
+WORK
+
+
+div className="pl-list">
+
+{products.map((item) => (
+ Product key={item.id} img={item.img} link={item.link} VE
+)) }

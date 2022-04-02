@@ -1,0 +1,131 @@
+import "./contact.css"
+import Phone from "../../img/Phone.png"
+import Address from "../../img/address.png"
+import Email from "../../img/email.png"
+
+const Contact = () => {
+    return (
+        <div className="c1">
+            <div className="c-bg"></div>
+            <div className="c-wrapper">
+                <div className="c-left">
+                    <h1 className="c-title">
+                        Contact me 
+                    </h1>
+                    <div className="c-info">
+                        <div className="c-info-item">
+                            <img src={Phone} alt="" className="c-icon" />
+                            7485963214
+                        </div>
+                        <div className="c-info-item">
+                            <img src={Email} alt="" className="c-icon" />
+                            contact@anubhav.in
+                        </div>
+                        <div className="c-info-item">
+                            <img src={Address} alt="" className="c-icon" />
+                            India
+                        </div>
+                    </div>
+                </div>
+                <div className="c-right">
+                    <p className="c-desc">
+                        <b>Want to get in touch</b> Drop down your quiries here
+                    </p>
+                    <form>
+                        <input type="text" placeholder="Enter Your Name" name="user_name"/>
+                        <input type="text" placeholder="Enter Your Subject" name="user_subject"/>
+                        <input type="text" placeholder="Enter Your Email" name="user_email"/>
+                        <textarea rows = "5" placeholder="Message" name="message"/>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Contact
+
+
+
+
+.c1{
+    height: 100vh;
+    position: relative;
+}
+
+.c-bg{
+    width: 20px;
+    height: 100%;
+    background-color: palegreen;
+    position: absolute;
+}
+
+.c-wrapper{
+    padding: 50px;
+    display: flex;
+}
+
+.c-left{
+    flex: 1;
+}
+
+.c-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-title{
+    font-size: 60px;
+    width: 80%;
+}
+
+.c-info-item{
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    font-weight: 300;
+}
+
+.c-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+}
+
+.c-desc{
+    font-weight: 200;
+}
+
+form{
+    margin-top: 20 px;
+}
+
+input{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin: 10px 0px;
+    font-style: 14px;
+    padding-left: 10px;
+}
+
+textarea{
+    width: 100%;
+    margin: 10px 0px;
+    font-style: 14px;
+    padding-left: 10px;
+}
+
+button{
+    border:none;
+    padding: 15px;
+    background-color: rgb(75, 180, 75);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}

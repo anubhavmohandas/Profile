@@ -8,7 +8,6 @@ const Works = () => {
                 <div className="p-circle"></div>
                 <div className="p-circle"></div>
             </div>
-            
         </div>
     )
 }
